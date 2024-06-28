@@ -30,6 +30,7 @@ body, html {
   padding: 20px;
   box-sizing: border-box;
   position: relative;
+  height: 100vh; /* Ensure section fills viewport height */
 }
 
 /* Style the logo */
@@ -131,7 +132,6 @@ body, html {
 .learn:hover {
   text-decoration: none;
 }
-
 
 /* Tablet/iPad view */
 @media (max-width: 1024px) {
