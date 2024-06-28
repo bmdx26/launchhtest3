@@ -18,7 +18,6 @@ body, html {
 .text-40-percent {
   color: #ffffff;
   width: 40%;
-  min-height: 100vh; /* Ensure section fills viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +28,7 @@ body, html {
   box-sizing: border-box;
   position: relative;
 }
+
 
 .logo {
   position: absolute;
