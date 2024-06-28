@@ -7,20 +7,18 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .text-40-percent {
   color: #ffffff;
   width: 40%;
+  min-height: 100vh; /* Ensure section fills viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,10 +28,8 @@ body, html {
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  min-height: 100vh; /* Ensure section fills viewport height */
 }
 
-/* Style the logo */
 .logo {
   position: absolute;
   top: 20px;
@@ -46,24 +42,13 @@ body, html {
   font-family: "Varela", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 300%;
   margin: 0;
   line-height: 1;
   padding: 0;
 }
 
-.text-2 {
-  font-family: "Cedarville Cursive", cursive;
-  font-weight: 900;
-  font-size: 500%;
-}
-
 .text-3 {
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 700%;
-  margin: 0;
 }
 
 .enabling {
@@ -113,7 +98,6 @@ body, html {
   text-decoration: none;
 }
 
-/* Centered .learn button */
 .learn {
   position: absolute;
   bottom: 10px;
@@ -123,71 +107,51 @@ body, html {
   font-weight: 400;
   font-size: 20px;
   color: #ffffff;
-  padding: 10px 20%; /* Adjust padding as needed */
+  padding: 10px 20%;
   border: 2px solid #ffffff;
   text-decoration: none;
-  white-space: nowrap; /* Ensure text stays on one line */
+  white-space: nowrap;
 }
 
 .learn:hover {
   text-decoration: none;
 }
 
-/* Tablet/iPad view */
 @media (max-width: 1024px) {
   .text-40-percent, .video-60-percent {
     width: 50%;
-  }
-
-  .text-1, .text-2, .text-3 {
-    font-size: 200%;
-  }
-
-  .text-2 {
-    font-size: 300%;
   }
 
   .text-3 {
     font-size: 400%;
   }
 
-  /* Add padding to the logo */
   .logo {
-    top: 30px; /* Adjust top padding as needed */
-    left: 30px; /* Adjust left padding as needed */
+    top: 30px;
+    left: 30px;
   }
 
-  /* Adjust .learn position for tablet */
   .learn {
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
-/* Mobile view */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
 
   .text-40-percent {
-    min-height: 100vh; /* Adjust as needed */
+    min-height: 100vh;
   }
 
   .text-1, .text-2, .text-3 {
     font-size: 150%;
   }
 
-  .text-2 {
-    font-size: 200%;
-  }
-
   .text-3 {
     font-size: 300%;
-  }
-
-  .video-60-percent video {
-    height: 100%;
   }
 
   .book {
@@ -198,14 +162,13 @@ body, html {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16px; /* Adjust font size */
-    padding: 10px 15%; /* Adjust padding */
+    font-size: 16px;
+    padding: 10px 15%;
   }
 
-  /* Ensure logo stays in place on mobile and add padding */
   .logo {
-    top: 20px; /* Adjust top padding as needed */
-    left: 20px; /* Adjust left padding as needed */
-    width: 40px; /* Adjust size as needed */
+    top: 20px;
+    left: 20px;
+    width: 40px;
   }
 }
