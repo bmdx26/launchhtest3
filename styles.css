@@ -16,6 +16,8 @@ body, html {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 .text-40-percent {
@@ -132,7 +134,6 @@ body, html {
   text-decoration: none;
 }
 
-
 /* Tablet/iPad view */
 @media (max-width: 1024px) {
   .text-40-percent, .video-60-percent {
@@ -168,37 +169,43 @@ body, html {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center; /* Center content vertically */
   }
 
   .text-40-percent, .video-60-percent {
     width: 100%;
-    height: 100vh;
+    height: auto; /* Adjust height as needed */
   }
 
   .text-1, .text-2, .text-3 {
-    font-size: 150%;
+    font-size: 120%; /* Adjust font sizes as needed */
   }
 
   .text-2 {
-    font-size: 200%;
+    font-size: 160%;
   }
 
   .text-3 {
-    font-size: 300%;
+    font-size: 240%;
   }
 
   .video-60-percent video {
-    height: 100%;
+    width: 100%;
+    height: auto; /* Ensure video stays within container */
   }
 
   .book {
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .learn {
-    bottom: 20px;
+    bottom: 20px; /* Adjust bottom spacing as needed */
     left: 50%;
     transform: translateX(-50%);
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 12px 24px; /* Adjust padding to fit content */
   }
 
   /* Ensure logo stays in place on mobile and add padding */
