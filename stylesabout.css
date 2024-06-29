@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Hanken+Grotesk:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+body {
+  background-color: #0a0909; /* Dark background color */
+  color: white; /* White text color */
+  font-family: 'Varela', sans-serif; /* Default font */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  text-align: center; /* Center align content */
+  max-width: 800px; /* Maximum width of content */
+  padding: 20px;
+}
+
+.logoo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.abouttext-content {
+  text-align: center; /* Center align text content */
+  position: relative; /* Ensure positioning for absolute elements */
+}
+
+.about-text-title {
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0.5em 0;
+  font-size: 300%;
+}
+
+.about-text-content {
+  margin-top: 10%;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110%;
+}
+
+.schedule {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text color */
+  text-decoration: none;
+  border: 2px solid white; /* White border */
+  border-radius: 5px;
+  font-family: 'Varela', sans-serif; /* Use Varela font */
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.schedule:hover {
+  background-color: white; /* White background on hover */
+  color: #0a0909; /* Dark text color on hover */
+  text-decoration: none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-text-title {
+    font-size: 200%; /* Decrease title font size */
+  }
+
+  .about-text-content {
+    font-size: 100%; /* Decrease content font size */
+  }
+
+  .schedule {
+    font-size: 0.8em; /* Decrease button font size */
+  }
+
+  
+}
